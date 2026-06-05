@@ -1,61 +1,58 @@
-# Astuti Kumari — Cybersecurity Portfolio
+# 🔐 Astuti Kumari — Cybersecurity Portfolio
 
-## 🚀 Quick Start
+A modern cybersecurity portfolio built with **React + Vite**, showcasing my experience in Application Security, Penetration Testing, Vulnerability Assessment, and Security Research.
 
-```bash
-npm install
-npm run dev
-```
+## 🌐 Live Website
 
-## 📝 Personalize
+**Portfolio:** https://astuti-portfolio.vercel.app
 
-All your data lives in **one file**: `src/constants/data.js`
+## 👩‍💻 About Me
 
-Update these fields:
-- `PERSONAL.email` — your email
-- `PERSONAL.github` — your GitHub URL
-- `PERSONAL.linkedin` — your LinkedIn URL
-- `PERSONAL.tryhackme` — your TryHackMe profile URL
-- `PERSONAL.resume` — put `resume.pdf` in the `/public` folder
-- `PROJECTS[*].github` — your actual GitHub repo links
-- `LABS[1].link` — your TryHackMe profile link
-- `BLOGS[*].link` — your Medium article links
+I'm a Computer Science student focused on:
 
-## 📁 Structure
+* Application Security (AppSec)
+* Web Penetration Testing
+* Vulnerability Assessment & Penetration Testing (VAPT)
+* Bug Bounty Hunting
+* Security Automation with Python
 
-```
-src/
-├── constants/
-│   └── data.js          ← ALL your content lives here
-├── components/
-│   ├── Portfolio.jsx     ← root composer
-│   ├── Navbar.jsx
-│   ├── Hero.jsx
-│   ├── About.jsx         ← also exports SectionHeader, AnimCard, Badge
-│   ├── Experience.jsx
-│   ├── Projects.jsx
-│   ├── Labs.jsx
-│   ├── Skills.jsx
-│   ├── Certifications.jsx
-│   ├── Blogs.jsx
-│   ├── Contact.jsx
-│   ├── Footer.jsx
-│   └── useInView.js      ← scroll animation hook
-├── App.jsx
-├── main.jsx
-└── index.css             ← CSS variables & globals
-```
+I enjoy building security tools, solving CTF challenges, and practicing hands-on labs through platforms like TryHackMe and PortSwigger Web Security Academy.
 
-## 🌐 Deploy to Vercel
+## 🚀 Technologies Used
 
-1. Push this folder to a GitHub repo
-2. Go to vercel.com → New Project → Import repo
-3. Framework: **Vite** (auto-detected)
-4. Build command: `npm run build`
-5. Output directory: `dist`
-6. Click Deploy ✅
+* React
+* Vite
+* JavaScript
+* CSS3
+* Python
+* Git & GitHub
+* Vercel
 
-## 📄 Resume
+## 🛡️ Featured Projects
 
-Place your `resume.pdf` inside the `/public` folder.
-It will be available at `https://yoursite.vercel.app/resume.pdf`
+* Password Strength Checker
+* Network Packet Analyzer
+* Network Port Scanner
+* Caesar Cipher Tool
+* Educational Keylogger
+* Cloud-Based DDoS Detection & Mitigation System
+
+## 📚 Learning Platforms
+
+* TryHackMe
+* PortSwigger Web Security Academy
+* PicoCTF
+* OverTheWire
+* Hack The Box
+* Forage Virtual Experiences
+
+## 📫 Contact
+
+* Email: [astutikumari2.0@gmail.com](mailto:astutikumari2.0@gmail.com)
+* GitHub: https://github.com/Astuti5
+* LinkedIn: https://linkedin.com/in/astuti-kumari-224526289
+* TryHackMe: https://tryhackme.com/p/Hello.me
+
+---
+
+Built with ❤️ using React and Vite.
