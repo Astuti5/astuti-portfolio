@@ -1,169 +1,70 @@
-import labs from "../data/labs";
+import { SectionHeader, AnimCard } from './About'
+import { LABS } from '../constants/data'
 
-function Labs() {
+export default function Labs() {
   return (
-    <section
-      id="labs"
-      style={{
-        padding: "120px 60px",
-        borderTop: "1px solid #2b0b14",
-      }}
-    >
-      <div style={{ textAlign: "center" }}>
-        <p
-          style={{
-            color: "#ff4d6d",
-            letterSpacing: "5px",
-            marginBottom: "20px",
-            fontSize: "18px",
-          }}
-        >
-          // LABS
-        </p>
+    <section id="labs" className="section section-alt">
+      <div className="container">
+        <SectionHeader
+          label="Hands-on Labs"
+          title="Learning Journey"
+          sub="Real security skills are built in labs — not just theory. Here's where I've put in the work."
+        />
 
-        <h1
-          style={{
-            fontSize: "72px",
-            fontWeight: "800",
-            marginBottom: "25px",
-          }}
-        >
-          Practical Learning
-        </h1>
-
-        <p
-          style={{
-            color: "#9c8f8f",
-            fontSize: "22px",
-            maxWidth: "900px",
-            margin: "auto",
-            lineHeight: "40px",
-            marginBottom: "70px",
-          }}
-        >
-          Building real-world cybersecurity skills through structured
-          labs, CTF challenges, and virtual experience programs.
-        </p>
-      </div>
-
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "35px",
-        }}
-      >
-        {labs.map((lab) => (
-          <div
-            key={lab.id}
-            style={{
-              background: "#0b0608",
-              border: "1px solid #2b0b14",
-              borderTop: `2px solid ${lab.color}`,
-              borderRadius: "20px",
-              padding: "40px",
-              cursor: "pointer",
-              transition: "0.3s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = lab.color;
-              e.currentTarget.style.transform =
-                "translateY(-5px)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "#2b0b14";
-              e.currentTarget.style.borderTop =
-                `2px solid ${lab.color}`;
-              e.currentTarget.style.transform =
-                "translateY(0px)";
-            }}
-          >
-            <h2
-              style={{
-                color: lab.color,
-                fontSize: "34px",
-                marginBottom: "20px",
+        <div style={{
+          display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 18,
+        }} className="labs-grid">
+          {LABS.map((lab, i) => (
+            <AnimCard key={i} delay={i * 0.09}>
+              <div className="card" style={{
+                padding: '22px 22px',
+                borderTop: `2px solid ${lab.color}`,
+                borderRadius: '0 0 var(--radius-md) var(--radius-md)',
+                display: 'flex', flexDirection: 'column', gap: 12,
+                transition: 'background 0.25s, transform 0.25s',
               }}
-            >
-              {lab.icon} {lab.platform}
-            </h2>
+                onMouseEnter={e => { e.currentTarget.style.background = 'var(--bg-card-hover)'; e.currentTarget.style.transform = 'translateY(-3px)' }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'var(--bg-card)'; e.currentTarget.style.transform = 'translateY(0)' }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <span style={{ fontSize: 22 }}>{lab.icon}</span>
+                  <h3 style={{ color: lab.color, fontSize: 15, fontWeight: 700 }}>{lab.platform}</h3>
+                </div>
 
-            <p
-              style={{
-                color: "#c7baba",
-                lineHeight: "36px",
-                fontSize: "20px",
-                marginBottom: "25px",
-              }}
-            >
-              {lab.description}
-            </p>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                  {lab.items.map(item => (
+                    <span key={item} style={{
+                      background: 'rgba(255,255,255,0.04)',
+                      border: '1px solid rgba(255,255,255,0.07)',
+                      color: 'var(--cream-muted)', fontSize: 11,
+                      padding: '3px 10px', borderRadius: 14,
+                    }}>{item}</span>
+                  ))}
+                </div>
 
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: "10px",
-                marginBottom: "28px",
-              }}
-            >
-              {lab.completed.slice(0, 5).map((item) => (
-                <span
-                  key={item}
-                  style={{
-                    padding: "8px 14px",
-                    borderRadius: "999px",
-                    background: `${lab.color}12`,
-                    border: `1px solid ${lab.color}40`,
-                    color: lab.color,
-                    fontSize: "14px",
-                  }}
+                <p style={{ color: 'var(--text-muted)', fontSize: 13, lineHeight: 1.6, margin: 0 }}>
+                  {lab.note}
+                </p>
+
+                <a href={lab.link} target="_blank" rel="noreferrer" style={{
+                  color: lab.color, fontSize: 12, fontFamily: 'var(--font-mono)',
+                  textDecoration: 'none', display: 'inline-flex', alignItems: 'center',
+                  gap: 5, fontWeight: 600,
+                  transition: 'opacity 0.2s',
+                }}
+                  onMouseEnter={e => e.currentTarget.style.opacity = '0.75'}
+                  onMouseLeave={e => e.currentTarget.style.opacity = '1'}
                 >
-                  {item}
-                </span>
-              ))}
-            </div>
-
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <span
-                style={{
-                  display: "inline-block",
-                  padding: "12px 22px",
-                  borderRadius: "999px",
-                  border: `1px solid ${lab.color}55`,
-                  background: `${lab.color}10`,
-                  color: lab.color,
-                  fontSize: "18px",
-                }}
-              >
-                {lab.stat}
-              </span>
-
-              <a
-                href={lab.profile}
-                target="_blank"
-                rel="noreferrer"
-                style={{
-                  color: "#5ef2d6",
-                  fontSize: "18px",
-                  fontWeight: "600",
-                  textDecoration: "none",
-                }}
-              >
-                Visit Profile →
-              </a>
-            </div>
-          </div>
-        ))}
+                  {lab.linkLabel}
+                </a>
+              </div>
+            </AnimCard>
+          ))}
+        </div>
       </div>
+      <style>{`
+        @media (max-width: 680px) { .labs-grid { grid-template-columns: 1fr !important; } }
+      `}</style>
     </section>
-  );
+  )
 }
-
-export default Labs;

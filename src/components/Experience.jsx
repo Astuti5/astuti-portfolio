@@ -1,138 +1,74 @@
-import experience from "../data/experience";
+import { SectionHeader, AnimCard } from './About'
+import { EXPERIENCE } from '../constants/data'
 
-function Experience() {
+export default function Experience() {
   return (
-    <section
-      id="experience"
-      style={{
-        padding: "100px 70px",
-        borderTop: "1px solid #2b0b14",
-      }}
-    >
-      <div style={{ textAlign: "center" }}>
-        <p
-          style={{
-            color: "#ff4d6d",
-            letterSpacing: "5px",
-            marginBottom: "20px",
-          }}
-        >
-          // EXPERIENCE
-        </p>
+    <section id="experience" className="section section-alt">
+      <div className="container">
+        <SectionHeader
+          label="Experience"
+          title="My Journey"
+          sub="From self-directed labs to hands-on internships — building toward Application Security."
+        />
 
-        <h1
-          style={{
-            fontSize: "64px",
-            fontWeight: "800",
-            marginBottom: "30px",
-          }}
-        >
-          My Journey
-        </h1>
+        <div style={{ position: 'relative', paddingLeft: 28 }}>
+          {/* Timeline line */}
+          <div style={{
+            position: 'absolute', left: 0, top: 8, bottom: 8, width: 2,
+            background: 'linear-gradient(to bottom, var(--burgundy-glow), rgba(90,191,168,0.2))',
+            borderRadius: 2,
+          }} />
 
-        <p
-          style={{
-            color: "#9d8d8d",
-            fontSize: "24px",
-            maxWidth: "900px",
-            margin: "0 auto 80px",
-            lineHeight: "42px",
-          }}
-        >
-          From self-directed labs to hands-on internships —
-          every step building toward Application Security.
-        </p>
-      </div>
+          {EXPERIENCE.map((exp, i) => (
+            <AnimCard key={i} delay={i * 0.08} style={{ marginBottom: 24 }}>
+              <div style={{ position: 'relative' }}>
+                {/* Dot */}
+                <div style={{
+                  position: 'absolute', left: -35, top: 18,
+                  width: 14, height: 14, borderRadius: '50%',
+                  background: exp.color, border: '2px solid var(--bg)',
+                  boxShadow: `0 0 10px ${exp.color}70`,
+                }} />
 
-      <div
-        style={{
-          borderLeft: "3px solid #ff4d6d",
-          marginLeft: "20px",
-          paddingLeft: "40px",
-        }}
-      >
-        {experience.map((exp) => (
-          <div
-            key={exp.id}
-            style={{
-              background: "#0a0508",
-              border: "1px solid #2b0b14",
-              borderRadius: "20px",
-              padding: "35px",
-              marginBottom: "40px",
-              position: "relative",
-            }}
-          >
-            <div
-              style={{
-                width: "18px",
-                height: "18px",
-                borderRadius: "50%",
-                background: exp.color,
-                position: "absolute",
-                left: "-50px",
-                top: "40px",
-                boxShadow: `0 0 15px ${exp.color}`,
-              }}
-            ></div>
-
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                marginBottom: "15px",
-                flexWrap: "wrap",
-                gap: "15px",
-              }}
-            >
-              <div>
-                <h2
-                  style={{
-                    fontSize: "32px",
-                    marginBottom: "8px",
-                  }}
-                >
-                  {exp.role}
-                </h2>
-
-                <h3 style={{ color: exp.color }}>
-                  {exp.company}
-                </h3>
-              </div>
-
-              <div
-                style={{
-                  background: exp.color + "20",
-                  padding: "10px 20px",
-                  borderRadius: "30px",
-                  color: exp.color,
-                  border: `1px solid ${exp.color}55`,
-                  fontSize: "15px",
+                <div className="card" style={{
+                  padding: '20px 22px',
+                  borderLeft: `2px solid ${exp.color}`,
+                  borderRadius: '0 var(--radius-md) var(--radius-md) 0',
+                  transition: 'transform 0.25s ease, border-color 0.25s',
                 }}
-              >
-                {exp.duration}
+                  onMouseEnter={e => e.currentTarget.style.transform = 'translateX(4px)'}
+                  onMouseLeave={e => e.currentTarget.style.transform = 'translateX(0)'}
+                >
+                  <div style={{
+                    display: 'flex', justifyContent: 'space-between',
+                    alignItems: 'flex-start', flexWrap: 'wrap', gap: 8, marginBottom: 10,
+                  }}>
+                    <div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2 }}>
+                        <span>{exp.icon}</span>
+                        <h3 style={{ fontSize: 15, fontWeight: 700, color: 'var(--text)' }}>{exp.role}</h3>
+                      </div>
+                      <div style={{ color: exp.color, fontSize: 13, fontWeight: 600, paddingLeft: 26 }}>{exp.org}</div>
+                    </div>
+                    <span style={{
+                      background: exp.color + '20', color: exp.color,
+                      fontSize: 11, padding: '4px 11px', borderRadius: 20,
+                      fontFamily: 'var(--font-mono)', whiteSpace: 'nowrap', flexShrink: 0,
+                    }}>{exp.period}</span>
+                  </div>
+                  <ul style={{ margin: 0, paddingLeft: 20 }}>
+                    {exp.points.map((pt, j) => (
+                      <li key={j} style={{
+                        color: 'var(--cream-muted)', fontSize: 13.5, lineHeight: 1.7, marginBottom: 3,
+                      }}>{pt}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-
-            <ul
-              style={{
-                marginTop: "25px",
-                paddingLeft: "20px",
-                color: "#cfc2c2",
-                lineHeight: "42px",
-                fontSize: "18px",
-              }}
-            >
-              {exp.points.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+            </AnimCard>
+          ))}
+        </div>
       </div>
     </section>
-  );
+  )
 }
-
-export default Experience;
