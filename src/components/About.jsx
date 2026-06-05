@@ -66,7 +66,7 @@ export default function About() {
           {/* Left: text */}
           <AnimCard>
             <p style={{ color: 'var(--cream-muted)', lineHeight: 1.85, fontSize: 15.5, marginBottom: 18 }}>
-              I'm a pre-final year <span style={{ color: 'var(--rose)', fontWeight: 600 }}>B.Tech Computer Science & Engineering</span> student
+              I'm a final year <span style={{ color: 'var(--rose)', fontWeight: 600 }}>B.Tech Computer Science & Engineering</span> student
               with a deep focus on Application Security and Web Penetration Testing. Through internships at
               Prodigy InfoTech and JD Infotech, structured labs on TryHackMe and PortSwigger, and active CTF
               participation, I've built practical experience in vulnerability assessment, reconnaissance, and secure development.
