@@ -3,11 +3,11 @@ export const PERSONAL = {
   name: "Astuti Kumari",
   title: "Cybersecurity Student | Penetration Tester | Bug Bounty Learner",
   tagline: "Passionate about securing web applications through practical penetration testing, vulnerability assessment, and hands-on security research.",
-  location: "Ranchi, Jharkhand, India",
-  email: "your.email@example.com",       // ← UPDATE
-  github: "https://github.com/yourusername",  // ← UPDATE
-  linkedin: "https://linkedin.com/in/yourusername", // ← UPDATE
-  tryhackme: "https://tryhackme.com/p/yourusername", // ← UPDATE
+  location: "Jharkhand, India",
+  email: "astutikumari2.0@example.com",       // ← UPDATE
+  github: "https://github.com/Astuti5",  // ← UPDATE
+  linkedin: "https://linkedin.com/in/astuti-kumari-224526289/", // ← UPDATE
+  tryhackme: "https://tryhackme.com/p/Hello.me", // ← UPDATE
   resume: "/resume.pdf",  // ← put resume.pdf in /public folder
   status: "Open to AppSec & VAPT Internships",
 }
@@ -129,11 +129,19 @@ export const EXPERIENCE = [
 // ─── PROJECTS ─────────────────────────────────────────────────────────────────
 export const PROJECTS = [
   {
+    icon: "🌐",
+    title: "DDoS-protection-cloud",
+    tech: ["AWS EC2","Nginx","Flask", "iptables","Linux"],
+    desc: "Built as a 3-member team project, this cloud security lab was deployed on AWS EC2 and uses Nginx log analysis, Python detection scripts, iptables firewall rules, and a Flask dashboard to automatically detect and mitigate suspicious traffic.",
+    github: "https://github.com/himanshipincha/DDoS-protection-cloud", // ← UPDATE
+    demo: null,
+  },
+    {
     icon: "🔐",
     title: "Password Strength Checker",
     tech: ["Python", "Security"],
     desc: "Evaluates password entropy, complexity patterns, and strength scoring. Provides actionable feedback to improve credential security.",
-    github: "https://github.com/yourusername/password-strength-checker", // ← UPDATE
+    github: "https://github.com/Astuti5/password-strength-checker", // ← UPDATE
     demo: null,
   },
   {
@@ -141,7 +149,7 @@ export const PROJECTS = [
     title: "Network Port Scanner",
     tech: ["Python", "Networking"],
     desc: "Lightweight Nmap-inspired scanner to enumerate open ports, detect running services, and map basic network topology.",
-    github: "https://github.com/yourusername/port-scanner", // ← UPDATE
+    github: "https://github.com/Astuti5/port-scanner", // ← UPDATE
     demo: null,
   },
   {
@@ -149,7 +157,7 @@ export const PROJECTS = [
     title: "Network Packet Analyzer",
     tech: ["Python", "Scapy"],
     desc: "Captures and dissects live network packets to analyze protocols, detect anomalies, and understand traffic patterns in real time.",
-    github: "https://github.com/yourusername/packet-analyzer", // ← UPDATE
+    github: "https://github.com/Astuti5/packet-analyzer", // ← UPDATE
     demo: null,
   },
   {
@@ -157,7 +165,7 @@ export const PROJECTS = [
     title: "Simple Keylogger",
     tech: ["Python", "Security Research"],
     desc: "Educational security tool demonstrating keystroke logging mechanics — built to understand and defend against such attack vectors.",
-    github: "https://github.com/yourusername/keylogger-edu", // ← UPDATE
+    github: "https://github.com/Astuti5/keylogger-edu", // ← UPDATE
     demo: null,
   },
   {
@@ -165,7 +173,7 @@ export const PROJECTS = [
     title: "Caesar Cipher Tool",
     tech: ["Python", "Cryptography"],
     desc: "Implements classical substitution cipher with brute-force and frequency analysis capabilities. Explores foundational cryptography concepts.",
-    github: "https://github.com/yourusername/caesar-cipher", // ← UPDATE
+    github: "https://github.com/Astuti5/caesar-cipher", // ← UPDATE
     demo: null,
   },
   {
@@ -173,7 +181,7 @@ export const PROJECTS = [
     title: "Cybersecurity Portfolio",
     tech: ["React", "Vite"],
     desc: "This portfolio — a production-grade, interactive single-page application showcasing security skills, projects, and learning journey.",
-    github: "https://github.com/yourusername/portfolio", // ← UPDATE
+    github: "https://github.com/Astuti5/portfolio", // ← UPDATE
     demo: null,
   },
 ]
@@ -245,7 +253,7 @@ export const BLOGS = [
     title: "Understanding SQL Injection for Beginners",
     tag: "Web Security",
     desc: "A practical guide to SQL Injection — how it works, common attack patterns, and how developers can prevent it.",
-    link: "https://medium.com/@yourusername", // ← UPDATE
+    link: "https://medium.com/@astutikumari2.0", // ← UPDATE
     readTime: "5 min read",
   },
   {
