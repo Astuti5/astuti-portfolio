@@ -3,11 +3,11 @@ export const PERSONAL = {
   name: "Astuti Kumari",
   title: "Cybersecurity Student | Penetration Tester | Bug Bounty Learner",
   tagline: "Passionate about securing web applications through practical penetration testing, vulnerability assessment, and hands-on security research.",
-  location: "Jharkhand, India",
-  email: "astutikumari2.0@example.com",       // ← UPDATE
-  github: "https://github.com/Astuti5",  // ← UPDATE
-  linkedin: "https://linkedin.com/in/astuti-kumari-224526289/", // ← UPDATE
-  tryhackme: "https://tryhackme.com/p/Hello.me", // ← UPDATE
+  location: "Ranchi, Jharkhand, India",
+  email: "your.email@example.com",       // ← UPDATE
+  github: "https://github.com/yourusername",  // ← UPDATE
+  linkedin: "https://linkedin.com/in/yourusername", // ← UPDATE
+  tryhackme: "https://tryhackme.com/p/yourusername", // ← UPDATE
   resume: "/resume.pdf",  // ← put resume.pdf in /public folder
   status: "Open to AppSec & VAPT Internships",
 }
@@ -129,19 +129,11 @@ export const EXPERIENCE = [
 // ─── PROJECTS ─────────────────────────────────────────────────────────────────
 export const PROJECTS = [
   {
-    icon: "🌐",
-    title: "DDoS-protection-cloud",
-    tech: ["AWS EC2","Nginx","Flask", "iptables","Linux"],
-    desc: "Built as a 3-member team project, this cloud security lab was deployed on AWS EC2 and uses Nginx log analysis, Python detection scripts, iptables firewall rules, and a Flask dashboard to automatically detect and mitigate suspicious traffic.",
-    github: "https://github.com/himanshipincha/DDoS-protection-cloud", // ← UPDATE
-    demo: null,
-  },
-    {
     icon: "🔐",
     title: "Password Strength Checker",
     tech: ["Python", "Security"],
     desc: "Evaluates password entropy, complexity patterns, and strength scoring. Provides actionable feedback to improve credential security.",
-    github: "https://github.com/Astuti5/password-strength-checker", // ← UPDATE
+    github: "https://github.com/yourusername/password-strength-checker", // ← UPDATE
     demo: null,
   },
   {
@@ -149,7 +141,7 @@ export const PROJECTS = [
     title: "Network Port Scanner",
     tech: ["Python", "Networking"],
     desc: "Lightweight Nmap-inspired scanner to enumerate open ports, detect running services, and map basic network topology.",
-    github: "https://github.com/Astuti5/port-scanner", // ← UPDATE
+    github: "https://github.com/yourusername/port-scanner", // ← UPDATE
     demo: null,
   },
   {
@@ -157,7 +149,7 @@ export const PROJECTS = [
     title: "Network Packet Analyzer",
     tech: ["Python", "Scapy"],
     desc: "Captures and dissects live network packets to analyze protocols, detect anomalies, and understand traffic patterns in real time.",
-    github: "https://github.com/Astuti5/packet-analyzer", // ← UPDATE
+    github: "https://github.com/yourusername/packet-analyzer", // ← UPDATE
     demo: null,
   },
   {
@@ -165,7 +157,7 @@ export const PROJECTS = [
     title: "Simple Keylogger",
     tech: ["Python", "Security Research"],
     desc: "Educational security tool demonstrating keystroke logging mechanics — built to understand and defend against such attack vectors.",
-    github: "https://github.com/Astuti5/keylogger-edu", // ← UPDATE
+    github: "https://github.com/yourusername/keylogger-edu", // ← UPDATE
     demo: null,
   },
   {
@@ -173,7 +165,7 @@ export const PROJECTS = [
     title: "Caesar Cipher Tool",
     tech: ["Python", "Cryptography"],
     desc: "Implements classical substitution cipher with brute-force and frequency analysis capabilities. Explores foundational cryptography concepts.",
-    github: "https://github.com/Astuti5/caesar-cipher", // ← UPDATE
+    github: "https://github.com/yourusername/caesar-cipher", // ← UPDATE
     demo: null,
   },
   {
@@ -181,7 +173,7 @@ export const PROJECTS = [
     title: "Cybersecurity Portfolio",
     tech: ["React", "Vite"],
     desc: "This portfolio — a production-grade, interactive single-page application showcasing security skills, projects, and learning journey.",
-    github: "https://github.com/Astuti5/portfolio", // ← UPDATE
+    github: "https://github.com/yourusername/portfolio", // ← UPDATE
     demo: null,
   },
 ]
@@ -192,37 +184,41 @@ export const LABS = [
     icon: "🕷️",
     platform: "PortSwigger Web Security Academy",
     color: "var(--burgundy-glow)",
+    stat: "13+ Labs Done",
     items: ["SQL Injection", "XSS", "Authentication Flaws", "Access Control", "CSRF", "SSRF", "Command Injection", "File Upload", "JWT Attacks", "Clickjacking", "Path Traversal", "XXE", "Business Logic"],
     note: "Practical labs focused on real-world web vulnerabilities and secure remediation.",
-    link: "https://portswigger.net/web-security",
-    linkLabel: "View Academy →",
+    link: "https://portswigger.net/web-security/all-labs", // Opens the public labs page
+    linkLabel: "View Academy",
   },
   {
     icon: "🚩",
     platform: "TryHackMe",
     color: "var(--mint)",
+    stat: "12+ Rooms",
     items: ["Jr Penetration Tester", "Pre Security", "Web Fundamentals", "OWASP Top 10", "Burp Suite", "Nmap", "Linux PrivEsc", "Metasploit", "Hydra", "Vulnversity", "Blue", "RootMe"],
     note: "Structured learning paths and rooms for practical offensive security skills.",
-    link: "https://tryhackme.com/p/yourusername", // ← UPDATE
-    linkLabel: "View Profile →",
+    link: "https://tryhackme.com/p/yourusername", // ← UPDATE with your THM username
+    linkLabel: "View My Profile",
   },
   {
     icon: "📦",
     platform: "Hack The Box",
     color: "var(--amber)",
+    stat: "Active",
     items: ["Starting Point", "Academy Modules", "Basic Enumeration", "Footprinting", "Network Traffic Analysis"],
     note: "Machine exploitation and academy module completion.",
     link: "https://www.hackthebox.com",
-    linkLabel: "Visit HTB →",
+    linkLabel: "Visit HTB",
   },
   {
     icon: "🎯",
     platform: "PicoCTF & OverTheWire",
     color: "var(--rose)",
+    stat: "7 Categories",
     items: ["Web Exploitation", "Cryptography", "Reverse Engineering", "Forensics", "Bandit Wargame", "SSH & Bash", "Linux Permissions"],
     note: "CTF challenges and wargames building real penetration testing intuition.",
     link: "https://picoctf.org",
-    linkLabel: "Visit PicoCTF →",
+    linkLabel: "Visit PicoCTF",
   },
 ]
 
@@ -235,15 +231,68 @@ export const SKILLS = [
 ]
 
 // ─── CERTIFICATIONS ───────────────────────────────────────────────────────────
+// HOW TO USE image & verifyUrl:
+// image: "/certs/tata.jpg"     ← put your cert JPG/PNG in /public/certs/ folder
+// verifyUrl: "https://..."     ← paste the Forage / Credly / LinkedIn verify link
+// Modal handles all cases: image only, verifyUrl only, both, or neither.
+
 export const CERTS = [
-  { icon: "🎓", name: "Ethical Hacking & Cyber Security", org: "IIT Delhi — World Technocon" },
-  { icon: "🏆", name: "Grandmaster Level 3 — Cyber Security", org: "Skill Certification" },
-  { icon: "🔷", name: "Tata Cybersecurity Analyst", org: "Forage Virtual Experience" },
-  { icon: "🛡️", name: "AIG Shields Up Cybersecurity", org: "Forage Job Simulation" },
-  { icon: "💳", name: "Mastercard Cybersecurity", org: "Forage Virtual Experience" },
-  { icon: "🔍", name: "Deloitte Cyber Security", org: "Forage Virtual Experience" },
-  { icon: "💻", name: "IBM Cybersecurity Fundamentals", org: "IBM SkillsBuild" },
-  { icon: "📜", name: "Cybersecurity Internship", org: "Prodigy InfoTech" },
+  {
+    icon: "🎓",
+    name: "Ethical Hacking & Cyber Security",
+    org: "IIT Delhi — World Technocon",
+    image: "/certs/iit-delhi.jpg",   // ← add image to /public/certs/
+    verifyUrl: null,
+  },
+  {
+    icon: "🏆",
+    name: "Grandmaster Level 3 — Cyber Security",
+    org: "Skill Certification",
+    image: "/certs/grandmaster.jpg",
+    verifyUrl: null,
+  },
+  {
+    icon: "🔷",
+    name: "Tata Cybersecurity Analyst",
+    org: "Forage Virtual Experience",
+    image: "/certs/tata.jpg",
+    verifyUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/yourlink", // ← UPDATE
+  },
+  {
+    icon: "🛡️",
+    name: "AIG Shields Up Cybersecurity",
+    org: "Forage Job Simulation",
+    image: "/certs/aig.jpg",
+    verifyUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/yourlink", // ← UPDATE
+  },
+  {
+    icon: "💳",
+    name: "Mastercard Cybersecurity",
+    org: "Forage Virtual Experience",
+    image: "/certs/mastercard.jpg",
+    verifyUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/yourlink", // ← UPDATE
+  },
+  {
+    icon: "🔍",
+    name: "Deloitte Cyber Security",
+    org: "Forage Virtual Experience",
+    image: "/certs/deloitte.jpg",
+    verifyUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/yourlink", // ← UPDATE
+  },
+  {
+    icon: "💻",
+    name: "IBM Cybersecurity Fundamentals",
+    org: "IBM SkillsBuild",
+    image: "/certs/ibm.jpg",
+    verifyUrl: null,
+  },
+  {
+    icon: "📜",
+    name: "Cybersecurity Internship",
+    org: "Prodigy InfoTech",
+    image: "/certs/prodigy.jpg",
+    verifyUrl: null,
+  },
 ]
 
 // ─── BLOG POSTS ───────────────────────────────────────────────────────────────
@@ -253,7 +302,7 @@ export const BLOGS = [
     title: "Understanding SQL Injection for Beginners",
     tag: "Web Security",
     desc: "A practical guide to SQL Injection — how it works, common attack patterns, and how developers can prevent it.",
-    link: "https://medium.com/@astutikumari2.0", // ← UPDATE
+    link: "https://medium.com/@yourusername", // ← UPDATE
     readTime: "5 min read",
   },
   {
