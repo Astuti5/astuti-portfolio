@@ -295,19 +295,19 @@ export const CERTS = [
     image: "/certs/deloitte.jpg",
     verifyUrl: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_69ccb6beb7cbd1a2ccd1a5cd_1781455798672_completion_certificate.pdf", 
   },
-  {
+  /*{
     icon: "💻",
     name: "IBM Cybersecurity Fundamentals",
     org: "IBM SkillsBuild",
     image: "/certs/ibm.jpg",
     verifyUrl: null,
-  },
+  },*/
   {
     icon: "📜",
     name: "Cybersecurity Internship",
     org: "Prodigy InfoTech",
     image: "/certs/prodigy.jpg",
-    verifyUrl: null,
+    verifyUrl: "https://prodigyinfotech.dev/verify?cin=PIT/JUN25/03485",
   },
 ]
 
