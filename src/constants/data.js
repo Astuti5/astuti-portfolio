@@ -254,18 +254,11 @@ export const SKILLS = [
 
 export const CERTS = [
   {
-    icon: "🎓",
-    name: "Ethical Hacking & Cyber Security",
-    org: "IIT Delhi — World Technocon",
-    image: "/certs/iit-delhi.jpg",   // ← add image to /public/certs/
-    verifyUrl: null,
-  },
-  {
     icon: "🏆",
     name: "Grandmaster Level 3 — Cyber Security",
     org: "Skill Certification",
     image: "/certs/grandmaster.jpg",
-    verifyUrl: null,
+    verifyUrl: "https://www.linkedin.com/in/astutikumari/details/certifications/",
   },
   {
     icon: "🔷",
@@ -295,6 +288,20 @@ export const CERTS = [
     image: "/certs/deloitte.jpg",
     verifyUrl: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_69ccb6beb7cbd1a2ccd1a5cd_1781455798672_completion_certificate.pdf", 
   },
+   {
+    icon: "📜",
+    name: "Cybersecurity Internship",
+    org: "Prodigy InfoTech",
+    image: "/certs/prodigy.jpg",
+    verifyUrl: "https://prodigyinfotech.dev/verify?cin=PIT/JUN25/03485",
+     },
+     {
+    icon: "🎓",
+    name: "Ethical Hacking & Cyber Security",
+    org: "IIT Delhi — World Technocon",
+    image: "/certs/iit-delhi.jpg",   // ← add image to /public/certs/
+    verifyUrl: "https://www.linkedin.com/in/astutikumari/details/certifications/",
+  },
   /*{
     icon: "💻",
     name: "IBM Cybersecurity Fundamentals",
@@ -302,13 +309,7 @@ export const CERTS = [
     image: "/certs/ibm.jpg",
     verifyUrl: null,
   },*/
-  {
-    icon: "📜",
-    name: "Cybersecurity Internship",
-    org: "Prodigy InfoTech",
-    image: "/certs/prodigy.jpg",
-    verifyUrl: "https://prodigyinfotech.dev/verify?cin=PIT/JUN25/03485",
-  },
+ 
 ]
 
 // ─── BLOG POSTS ───────────────────────────────────────────────────────────────
