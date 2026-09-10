@@ -3,9 +3,9 @@ import { PERSONAL } from '../constants/data'
 
 const LINKS = [
   { icon: '📧', label: 'Email',     value: PERSONAL.email,     href: `mailto:${PERSONAL.email}` },
-  { icon: '💻', label: 'GitHub',    value: 'github.com/yourusername', href: PERSONAL.github },
-  { icon: '🔗', label: 'LinkedIn',  value: 'linkedin.com/in/yourusername', href: PERSONAL.linkedin },
-  { icon: '🚩', label: 'TryHackMe', value: 'tryhackme.com/p/yourusername', href: PERSONAL.tryhackme },
+  { icon: '💻', label: 'GitHub',    value: 'github.com/Astuti5', href: PERSONAL.github },
+  { icon: '🔗', label: 'LinkedIn',  value: 'linkedin.com/in/astutikumari', href: PERSONAL.linkedin },
+  { icon: '🚩', label: 'TryHackMe', value: 'tryhackme.com/p/Hello.me', href: PERSONAL.tryhackme },
   { icon: '📍', label: 'Location',  value: PERSONAL.location,  href: null },
 ]
 
