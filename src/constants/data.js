@@ -3,11 +3,11 @@ export const PERSONAL = {
   name: "Astuti Kumari",
   title: "Cybersecurity Student | Penetration Tester | Bug Bounty Learner",
   tagline: "Passionate about securing web applications through practical penetration testing, vulnerability assessment, and hands-on security research.",
-  location: "Ranchi, Jharkhand, India",
-  email: "your.email@example.com",       // ← UPDATE
-  github: "https://github.com/yourusername",  // ← UPDATE
-  linkedin: "https://linkedin.com/in/yourusername", // ← UPDATE
-  tryhackme: "https://tryhackme.com/p/yourusername", // ← UPDATE
+  location: "Bihar, India",
+  email: "astutikumari2.0@gmail.com",       // ← UPDATE
+  github: "https://github.com/Astuti5",  // ← UPDATE
+  linkedin: "https://www.linkedin.com/in/astuti-kumari-224526289", // ← UPDATE
+  tryhackme: "https://tryhackme.com/p/Hello.me", // ← UPDATE
   resume: "/resume.pdf",  // ← put resume.pdf in /public folder
   status: "Open to AppSec & VAPT Internships",
 }
@@ -128,6 +128,22 @@ export const EXPERIENCE = [
 
 // ─── PROJECTS ─────────────────────────────────────────────────────────────────
 export const PROJECTS = [
+   {
+    icon: "🔐",
+    title: "SEBI_Trust_Shield",
+    tech: ["javascript", "Security"],
+    desc: "Detect phishing, scam messages, malicious URLs and suspicious content entirely inside your browser.",
+    github: "https://github.com/Astuti5/SEBI_Trust_Shield", // ← UPDATE
+    demo: null,
+  },
+   {
+    icon: "🔐",
+    title: "DDoS-protection-cloud",
+    tech: ["Python", "Security"],
+    desc: "Automated DDoS detection and mitigation system for cloud-hosted web applications using Nginx log analysis, Python detection scripts, iptables firewall protection, and a Flask monitoring dashboard.",
+    github: "https://github.com/himanshipincha/DDoS-protection-cloud", // ← UPDATE
+    demo: null,
+  },
   {
     icon: "🔐",
     title: "Password Strength Checker",
@@ -138,10 +154,10 @@ export const PROJECTS = [
   },
   {
     icon: "🛰️",
-    title: "Network Port Scanner",
+    title: "SecureLens-AI",
     tech: ["Python", "Networking"],
     desc: "Lightweight Nmap-inspired scanner to enumerate open ports, detect running services, and map basic network topology.",
-    github: "https://github.com/yourusername/port-scanner", // ← UPDATE
+    github: "https://github.com/Astuti5/SecureLens-AI", // ← UPDATE
     demo: null,
   },
   {
@@ -149,31 +165,31 @@ export const PROJECTS = [
     title: "Network Packet Analyzer",
     tech: ["Python", "Scapy"],
     desc: "Captures and dissects live network packets to analyze protocols, detect anomalies, and understand traffic patterns in real time.",
-    github: "https://github.com/yourusername/packet-analyzer", // ← UPDATE
+    github: "https://github.com/Astuti5/network-packet-analyzer", // ← UPDATE
     demo: null,
   },
   {
     icon: "⌨️",
-    title: "Simple Keylogger",
+    title: "educational-keylogger-lab",
     tech: ["Python", "Security Research"],
     desc: "Educational security tool demonstrating keystroke logging mechanics — built to understand and defend against such attack vectors.",
-    github: "https://github.com/yourusername/keylogger-edu", // ← UPDATE
+    github: "https://github.com/Astuti5/educational-keylogger-lab", // ← UPDATE
     demo: null,
   },
   {
     icon: "🔑",
-    title: "Caesar Cipher Tool",
+    title: "caesar-cipher-encryption-tool",
     tech: ["Python", "Cryptography"],
     desc: "Implements classical substitution cipher with brute-force and frequency analysis capabilities. Explores foundational cryptography concepts.",
-    github: "https://github.com/yourusername/caesar-cipher", // ← UPDATE
+    github: "https://github.com/Astuti5/caesar-cipher-encryption-tool", // ← UPDATE
     demo: null,
   },
   {
     icon: "🌐",
-    title: "Cybersecurity Portfolio",
+    title: "astuti-portfolio",
     tech: ["React", "Vite"],
     desc: "This portfolio — a production-grade, interactive single-page application showcasing security skills, projects, and learning journey.",
-    github: "https://github.com/yourusername/portfolio", // ← UPDATE
+    github: "https://github.com/Astuti5/astuti-portfolio", // ← UPDATE
     demo: null,
   },
 ]
@@ -187,7 +203,7 @@ export const LABS = [
     stat: "13+ Labs Done",
     items: ["SQL Injection", "XSS", "Authentication Flaws", "Access Control", "CSRF", "SSRF", "Command Injection", "File Upload", "JWT Attacks", "Clickjacking", "Path Traversal", "XXE", "Business Logic"],
     note: "Practical labs focused on real-world web vulnerabilities and secure remediation.",
-    link: "https://portswigger.net/web-security/all-labs", // Opens the public labs page
+    link: "https://portswigger.net/users/youraccount/personaldetails", // Opens the public labs page
     linkLabel: "View Academy",
   },
   {
@@ -197,7 +213,7 @@ export const LABS = [
     stat: "12+ Rooms",
     items: ["Jr Penetration Tester", "Pre Security", "Web Fundamentals", "OWASP Top 10", "Burp Suite", "Nmap", "Linux PrivEsc", "Metasploit", "Hydra", "Vulnversity", "Blue", "RootMe"],
     note: "Structured learning paths and rooms for practical offensive security skills.",
-    link: "https://tryhackme.com/p/yourusername", // ← UPDATE with your THM username
+    link: "https://tryhackme.com/p/Hello.me", // ← UPDATE with your THM username
     linkLabel: "View My Profile",
   },
   {
@@ -256,28 +272,28 @@ export const CERTS = [
     name: "Tata Cybersecurity Analyst",
     org: "Forage Virtual Experience",
     image: "/certs/tata.jpg",
-    verifyUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/yourlink", // ← UPDATE
+    verifyUrl: "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_69ccb6beb7cbd1a2ccd1a5cd_1776276566821_completion_certificate.pdf", // ← UPDATE
   },
   {
     icon: "🛡️",
     name: "AIG Shields Up Cybersecurity",
     org: "Forage Job Simulation",
     image: "/certs/aig.jpg",
-    verifyUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/yourlink", // ← UPDATE
+    verifyUrl: "https://www.theforage.com/completion-certificates/4nAmAbTbHbnGMNSyo/2ZFnEGEDKTQMtEv9C_4nAmAbTbHbnGMNSyo_69ccb6beb7cbd1a2ccd1a5cd_1780674178832_completion_certificate.pdf", 
   },
   {
     icon: "💳",
     name: "Mastercard Cybersecurity",
     org: "Forage Virtual Experience",
     image: "/certs/mastercard.jpg",
-    verifyUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/yourlink", // ← UPDATE
+    verifyUrl: "https://www.theforage.com/completion-certificates/mfxGwGDp6WkQmtmTf/vcKAB5yYAgvemepGQ_mfxGwGDp6WkQmtmTf_69ccb6beb7cbd1a2ccd1a5cd_1781459167307_completion_certificate.pdf", 
   },
   {
     icon: "🔍",
     name: "Deloitte Cyber Security",
     org: "Forage Virtual Experience",
     image: "/certs/deloitte.jpg",
-    verifyUrl: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/yourlink", // ← UPDATE
+    verifyUrl: "https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_69ccb6beb7cbd1a2ccd1a5cd_1781455798672_completion_certificate.pdf", 
   },
   {
     icon: "💻",
@@ -299,10 +315,10 @@ export const CERTS = [
 export const BLOGS = [
   {
     icon: "💉",
-    title: "Understanding SQL Injection for Beginners",
+    title: "Lab: SQL injection vulnerability allowing login bypass without Burp Suite",
     tag: "Web Security",
     desc: "A practical guide to SQL Injection — how it works, common attack patterns, and how developers can prevent it.",
-    link: "https://medium.com/@yourusername", // ← UPDATE
+    link: "https://medium.com/@astutikumari2.0", 
     readTime: "5 min read",
   },
   {
@@ -310,7 +326,7 @@ export const BLOGS = [
     title: "Getting Started with Burp Suite",
     tag: "Tools",
     desc: "Step-by-step introduction to intercepting HTTP requests, using Repeater, and discovering web application vulnerabilities.",
-    link: "https://medium.com/@yourusername", // ← UPDATE
+    link: "https://medium.com/@astutikumari2.0/", 
     readTime: "7 min read",
   },
   {
@@ -318,7 +334,7 @@ export const BLOGS = [
     title: "OWASP Top 10 — Simply Explained",
     tag: "Web Security",
     desc: "Breaking down the most critical web application vulnerabilities with real examples and practical mitigation techniques.",
-    link: "https://medium.com/@yourusername", // ← UPDATE
+    link: "https://medium.com/@astutikumari2.0",
     readTime: "8 min read",
   },
 ]
