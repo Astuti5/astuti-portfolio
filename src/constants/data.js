@@ -27,9 +27,9 @@ export const NAV_ITEMS = [
 // ─── HERO STATS ───────────────────────────────────────────────────────────────
 export const STATS = [
   { value: 100, suffix: "+", label: "Security Labs" },
-  { value: 6,   suffix: "",  label: "Projects" },
+  { value: 7,   suffix: "",  label: "Projects" },
   { value: 2,   suffix: "",  label: "Internships" },
-  { value: 8,   suffix: "+", label: "Certificates" },
+  { value: 7,   suffix: "+", label: "Certificates" },
 ]
 
 // ─── HERO TERMINAL LINES ──────────────────────────────────────────────────────
