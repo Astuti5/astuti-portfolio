@@ -200,7 +200,7 @@ export const LABS = [
     icon: "🕷️",
     platform: "PortSwigger Web Security Academy",
     color: "var(--burgundy-glow)",
-    stat: "13+ Labs Done",
+    stat: "20+ Labs Done",
     items: ["SQL Injection", "XSS", "Authentication Flaws", "Access Control", "CSRF", "SSRF", "Command Injection", "File Upload", "JWT Attacks", "Clickjacking", "Path Traversal", "XXE", "Business Logic"],
     note: "Practical labs focused on real-world web vulnerabilities and secure remediation.",
     link: "https://portswigger.net/users/youraccount/personaldetails", // Opens the public labs page
@@ -210,7 +210,7 @@ export const LABS = [
     icon: "🚩",
     platform: "TryHackMe",
     color: "var(--mint)",
-    stat: "12+ Rooms",
+    stat: "60+ Rooms",
     items: ["Jr Penetration Tester", "Pre Security", "Web Fundamentals", "OWASP Top 10", "Burp Suite", "Nmap", "Linux PrivEsc", "Metasploit", "Hydra", "Vulnversity", "Blue", "RootMe"],
     note: "Structured learning paths and rooms for practical offensive security skills.",
     link: "https://tryhackme.com/p/Hello.me", // ← UPDATE with your THM username
